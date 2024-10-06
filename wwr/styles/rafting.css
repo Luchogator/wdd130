@@ -23,7 +23,6 @@ header {
     padding: 20px;
 }
 
-/* Header Container Styling */
 .header-container {
     display: flex;
     align-items: center;
@@ -61,14 +60,13 @@ header nav ul li a {
 .logo {
     width: 150px;
     height: auto;
-    margin: 0;
 }
 
 /* Hero Section Styling */
 .hero {
     position: relative;
     text-align: center;
-    background-image: url('../images/hero.jpg');
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -85,7 +83,6 @@ header nav ul li a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Hero Article Styling */
 .hero article {
     position: absolute;
     bottom: 15%;
@@ -118,7 +115,6 @@ header nav ul li a {
     color: var(--text-color);
 }
 
-/* Section Headings */
 .history-container h2, .adventure-container h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--secondary-color);
@@ -143,7 +139,6 @@ header nav ul li a {
     margin: 20px;
 }
 
-/* Image Styling for Adventure Section */
 .image-container img {
     width: auto;
     height: 200px;
@@ -170,22 +165,26 @@ footer {
     align-items: center;
 }
 
-/* Footer Text Alignment */
-.footer-left {
+.footer-left, .footer-right {
     flex: 1;
-    text-align: left;
+    text-align: left; /* Alinear texto a la izquierda */
 }
 
 .footer-right {
-    flex: 1;
-    text-align: right;
+    text-align: right; /* Alinear texto a la derecha */
 }
 
 /* Social Media Icons Styling */
-.social-media a img {
-    width: 24px; /* Adjusted size */
-    height: 24px;
+.social-media {
+    display: flex;
+}
+
+.social-media a {
     margin: 0 10px;
-    display: inline-block;
-    border: none;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
 }

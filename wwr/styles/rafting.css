@@ -1,201 +1,191 @@
-/* ------------------------
-    Root CSS Variables
-   ------------------------ */
-   :root {
-    --primary-color: #4CAF50;  /* Main color for header and footer */
-    --secondary-color: #2E7D32; /* Secondary color for headings */
-    --accent1-color: #81D4FA; /* Accent color 1 for minor elements */
-    --accent2-color: #26A69A; /* Accent color 2 for borders and highlights */
-    --text-color: #333; /* General text color */
-    --background-color: #ffffff; /* General background color */
+/* Root Variables for Colors and Background */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2E7D32;
+    --accent1-color: #81D4FA;
+    --accent2-color: #26A69A;
+    --text-color: #333;
+    --background-color: #ffffff;
 }
 
-/* ------------------------
-    General Styling
-   ------------------------ */
+/* General Body Styling */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    color: var(--text-color); /* General text color */
-    background-color: var(--background-color); /* General background color */
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
-/* ------------------------
-    Header and Footer Styling
-   ------------------------ */
-header, footer {
+/* Header Styling */
+header {
     background-color: var(--primary-color);
-    color: white; /* Text color for header and footer */
-    text-align: center;
     padding: 20px;
 }
 
-/* Logo styling */
-.logo {
-    width: 150px; /* Fixed size for the logo */
-    height: auto;
-    margin: 20px auto; /* Centers the logo within the header */
-    display: block;
+/* Header Container Styling */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Navigation styles */
-nav ul {
-    list-style-type: none; /* Remove default list styles */
+/* Logo and Navigation Styling */
+.logo-container {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-container {
+    flex: 2;
+    text-align: right;
+}
+
+header nav ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white; /* Text color */
-    background-color: transparent; /* Transparent background */
+header nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
-/* ------------------------
-    Hero Section Styling
-   ------------------------ */
+/* Logo Image Styling */
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
+
+/* Hero Section Styling */
 .hero {
     position: relative;
     text-align: center;
-    background-image: url("../images/hero.jpg");
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     height: 400px;
-    color: white; /* Text color */
-    background-color: #333; /* Fallback background color */
+    color: white;
 }
 
-/* Main heading in the hero section */
 .hero h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 4em; /* Size of the heading */
+    font-size: 4em;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Ensures perfect centering */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
-    color: white; /* Text color */
-    background-color: transparent; /* Transparent background */
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Article inside the hero section */
+/* Hero Article Styling */
 .hero article {
     position: absolute;
-    bottom: 15%; /* Adjust according to need */
-    right: 10%; /* Keep the box to the right */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    bottom: 15%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
-    color: white; /* Text color */
+    color: white;
     max-width: 250px;
-    text-align: center; /* Center the text */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Vertical alignment */
-    align-items: center; /* Center items */
-    justify-content: center; /* Center content within container */
+    text-align: center;
 }
 
-/* Specific styling for the Happy Customer image */
+/* Customer Satisfaction Logo Styling */
 .happy-customer {
-    width: 50px; /* Fixed size for the logo */
-    height: 50px;
-    margin-bottom: 10px; /* Space between logo and text */
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
 }
 
-/* ------------------------
-    History and Adventure Sections
-   ------------------------ */
-.history, .adventure {
-    padding: 20px;
-    background-color: var(--background-color); /* Background color */
-    color: var(--text-color); /* Text color */
+/* History and Adventure Sections */
+.history-container, .adventure-container {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border: var(--accent2-color) solid 1px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 95%;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
 }
 
-.history h2, .adventure h2 {
+/* Section Headings */
+.history-container h2, .adventure-container h2 {
     font-family: 'Oswald', sans-serif;
-    color: var(--secondary-color); /* Text color */
-    background-color: var(--background-color); /* Background color */
+    color: var(--secondary-color);
+    text-align: center;
 }
 
-/* Styling for the History section container */
-.history-container {
-    background-color: #f5f5f5; /* Light background color for emphasis */
-    padding: 20px; /* Internal padding */
-    border: 1px solid var(--accent2-color); /* Border with accent color */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px auto; /* Margin above and below */
-    max-width: 1200px; /* Wider max-width for more horizontal space */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    color: var(--text-color); /* Text color */
+/* Paragraph Styling */
+.history-container p, .adventure-container p {
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
-/* Adjust paragraphs within the History section */
-.history-container p {
-    margin-bottom: 15px; /* Space between paragraphs */
-    line-height: 1.6; /* Line height for better readability */
-}
-
-/* Styling for the adventure images */
+/* Adventure Images Styling */
 .adventure-images {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: center; /* Center the images */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image-container {
-    text-align: center; /* Center the content */
-    margin: 10px; /* Space between containers */
-    background-color: var(--background-color); /* Background color */
-    color: var(--text-color); /* Text color */
+    text-align: center;
+    margin: 20px;
 }
 
+/* Image Styling for Adventure Section */
 .image-container img {
-    width: auto; /* Use natural width */
-    height: 200px; /* Limit height for better proportions */
-    border: 2px solid var(--accent2-color); /* Border color */
+    width: auto;
+    height: 200px;
+    border: var(--accent2-color) solid 2px;
     border-radius: 5px;
-    object-fit: cover; /* Ensure images cover the area */
+    object-fit: cover;
     display: block;
-    margin: 0 auto; /* Center images */
+    margin: 0 auto;
 }
 
 .image-container .caption {
-    font-size: 0.9em; /* Slightly smaller text for captions */
-    color: var(--text-color); /* Text color */
-    background-color: var(--background-color); /* Background color */
+    font-size: 0.9em;
+    color: var(--text-color);
     margin-top: 5px;
 }
 
-/* ------------------------
-    Footer Content and Social Media Links
-   ------------------------ */
-footer p {
-    font-size: 0.9em; /* Slightly smaller text */
-    color: white; /* Text color */
-    background-color: var(--primary-color); /* Background color */
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Spread content to edges */
+    align-items: center;
 }
 
-/* Social media icon styling */
+/* Footer Text Alignment */
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Social Media Icons Styling */
 .social-media a img {
-    width: 24px; /* Set fixed width */
-    height: 24px; /* Set fixed height */
+    width: 24px; /* Adjusted size */
+    height: 24px;
     margin: 0 10px;
     display: inline-block;
-    border: none; /* Ensure no border for icons */
-    background-color: transparent; /* Transparent background */
-}
-
-/* ------------------------
-    Consolidated Footer Styling
-   ------------------------ */
-footer {
-    color: white; /* Ensure text color for footer */
-    background-color: var(--primary-color); /* Ensure background color */
+    border: none;
 }

@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Declares the document language as English -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rafting Adventures About Us Page">
-    <title>About Us - Rafting Adventures</title> <!-- Title element inside head -->
+    <title>About Us - Rafting Adventures</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="./styles/rafting.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <!-- Logo of the company -->
-        <img src="./images/logo.png" alt="Rafting Adventures Logo" class="logo">
-        <!-- Navigation links -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <!-- Logo of the company aligned to the left -->
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="Rafting Adventures Logo" class="logo">
+            </div>
+            <!-- Navigation links aligned to the right -->
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <div class="hero">
         <h1>Rafting Adventures</h1>
         <article>
-            <h2>Our Commitment</h2> <!-- Optional title to address structure -->
             <!-- Image of the happy customer -->
             <img src="./images/happy-customer.jpg" alt="Happy Customer" class="happy-customer">
             <p>We are committed to providing the best whitewater rafting experience!</p>
@@ -37,26 +45,24 @@
     <!-- Main Content -->
     <main>
         <!-- History Section -->
-        <section class="history">
+        <section class="history-container">
             <h2>History</h2>
-            <div class="history-container">
-                <p>
-                    Founded in 1995, Rafting Adventures is one of the leading rafting companies in Peru. Located in the heart of the Amazon rainforest, we offer a unique and thrilling experience navigating some of the most beautiful and challenging rivers in the region. Our operations are based in the lush jungle areas of Peru, where our guests can experience the true essence of nature and adventure.
-                </p>
-                <p>
-                    Our company prides itself on its commitment to safety and excellence. We use state-of-the-art equipment that is maintained to the highest standards, ensuring our clients have a safe and enjoyable experience. We are also known for having one of the most qualified teams of guides and professionals, who speak multiple languages, including English, Spanish, and French, making it easier for guests from all over the world to feel comfortable and well-guided.
-                </p>
-                <p>
-                    Through our years of experience, we have perfected our rafting tours to cater to adventurers of all levels, from beginners to seasoned rafters. Our guides are not only skilled in navigating the river's rapids but are also experts in the rich cultural and ecological heritage of the Peruvian rainforest. They are always eager to share fascinating stories and knowledge about the area, making each trip not only an adventure but an educational experience as well.
-                </p>
-                <p>
-                    Whether you are looking for a thrilling ride down class V rapids or a peaceful float through calm river sections to take in the breathtaking scenery, Rafting Adventures has the perfect tour for you. Join us to create memories that will last a lifetime!
-                </p>
-            </div>
+            <p>
+                Founded in 1995, Rafting Adventures is one of the leading rafting companies in Peru. Located in the heart of the Amazon rainforest, we offer a unique and thrilling experience navigating some of the most beautiful and challenging rivers in the region. Our operations are based in the lush jungle areas of Peru, where our guests can experience the true essence of nature and adventure.
+            </p>
+            <p>
+                Our company prides itself on its commitment to safety and excellence. We use state-of-the-art equipment that is maintained to the highest standards, ensuring our clients have a safe and enjoyable experience. We are also known for having one of the most qualified teams of guides and professionals, who speak multiple languages, including English, Spanish, and French, making it easier for guests from all over the world to feel comfortable and well-guided.
+            </p>
+            <p>
+                Through our years of experience, we have perfected our rafting tours to cater to adventurers of all levels, from beginners to seasoned rafters. Our guides are not only skilled in navigating the river's rapids but are also experts in the rich cultural and ecological heritage of the Peruvian rainforest. They are always eager to share fascinating stories and knowledge about the area, making each trip not only an adventure but an educational experience as well.
+            </p>
+            <p>
+                Whether you are looking for a thrilling ride down class V rapids or a peaceful float through calm river sections to take in the breathtaking scenery, Rafting Adventures has the perfect tour for you. Join us to create memories that will last a lifetime!
+            </p>
         </section>
 
         <!-- Adventure Section -->
-        <section class="adventure">
+        <section class="adventure-container">
             <h2>Adventure Awaits You!</h2>
             <p>Join us for an unforgettable experience on the river. Our team of expert guides will ensure your safety and enjoyment every step of the way.</p>
             <div class="adventure-images">
@@ -86,13 +92,15 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>© 2024 Rafting Adventures. Developed by Luis Eleazar Lizano Rojas</p>
-        <p>Contact us: info@raftingadventures.com | +51 963781410</p>
-        <div class="social-media">
+        <div class="footer-left">
+            <p>© 2024 Rafting Adventures. Developed by Luis Eleazar Lizano Rojas</p>
+            <p>Contact us: info@raftingadventures.com | +51 963781410</p>
+        </div>
+        <div class="footer-right social-media">
             <a href="#"><img src="./images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="./images/x-icon.png" alt="X (formerly Twitter)"></a> <!-- Update for Twitter to X -->
+            <a href="#"><img src="./images/x-icon.png" alt="X (formerly Twitter)"></a>
             <a href="#"><img src="./images/instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="./images/tiktok-icon.png" alt="TikTok"></a> <!-- Added TikTok -->
+            <a href="#"><img src="./images/tiktok-icon.png" alt="TikTok"></a>
         </div>
     </footer>
 </body>

@@ -97,7 +97,7 @@ header nav ul li a {
 
 /* Customer Satisfaction Logo Styling */
 .happy-customer {
-    width: 70px;
+    width: 100px;
     height: 70px;
     margin-bottom: 10px;
 }
@@ -112,7 +112,7 @@ header nav ul li a {
     max-width: 95%;
     width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text-color);
+    color: var(--text-color); /* Asegúrate de que todos los contenedores tengan color */
 }
 
 .history-container h2, .adventure-container h2 {
@@ -122,7 +122,7 @@ header nav ul li a {
 }
 
 /* Paragraph Styling */
-.history-container p, .adventure-container p {
+section p {
     margin-bottom: 15px;
     line-height: 1.6;
 }
@@ -161,17 +161,17 @@ footer {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Spread content to edges */
+    justify-content: space-between;
     align-items: center;
 }
 
 .footer-left, .footer-right {
     flex: 1;
-    text-align: left; /* Alinear texto a la izquierda */
+    text-align: left;
 }
 
 .footer-right {
-    text-align: right; /* Alinear texto a la derecha */
+    text-align: right;
 }
 
 /* Social Media Icons Styling */

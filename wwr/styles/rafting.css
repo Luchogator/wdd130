@@ -1,12 +1,12 @@
 /* Root Variables for Colors and Background */
 :root {
-    --primary-color: #2e7d32; /* Darker green for better contrast */
-    --secondary-color: #1b5e20; /* Darker green for buttons */
-    --accent1-color: #1565c0; /* Darker blue for better contrast */
-    --accent2-color: #004d40; /* Darker accent for borders */
-    --text-color: #333333; /* Text color for better readability */
-    --background-color: #ffffff; /* White background for high contrast */
-    --heading-color: #1b5e20; /* Dark green for headers */
+    --primary-color: #2e7d32;
+    --secondary-color: #1b5e20;
+    --accent1-color: #1565c0;
+    --accent2-color: #004d40;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --heading-color: #1b5e20;
 }
 
 /* General Body Styling */
@@ -22,14 +22,14 @@ body {
 h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--heading-color);
-    font-size: 2em; /* Consistent font size */
+    font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
 }
 
 /* Header Styling */
 header {
-    background-color: var(--primary-color); /* Improved contrast */
+    background-color: var(--primary-color);
     padding: 20px;
 }
 
@@ -61,16 +61,16 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white; /* High contrast text */
+    color: white;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: var(--secondary-color); /* Darker green for contrast */
+    background-color: var(--secondary-color);
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 header nav ul li a:hover {
-    background-color: var(--accent1-color); /* Darker blue on hover */
+    background-color: var(--accent1-color);
 }
 
 /* Logo Image Styling */
@@ -87,7 +87,7 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     height: 400px;
-    color: white; /* High contrast text */
+    color: white;
 }
 
 .hero h1 {
@@ -100,10 +100,9 @@ header nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Subheading in the hero section */
 .hero-article h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.4em; 
+    font-size: 1.4em;
     color: white;
     padding-left: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -111,13 +110,12 @@ header nav ul li a:hover {
     line-height: 1.3;
 }
 
-/* Hero article container */
 .hero article {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
     color: white;
@@ -128,21 +126,19 @@ header nav ul li a:hover {
     align-items: center;
 }
 
-/* Paragraph in hero section */
 .hero-article p {
     font-size: 1em;
     margin-left: 10px;
     line-height: 1.6;
 }
 
-/* Customer Satisfaction Image Styling */
 .happy-customer {
     width: 120px;
     height: auto;
     margin-right: 20px;
 }
 
-/* Styling for the History section container */
+/* History Section Styling */
 .history-container {
     background-color: #f5f5f5;
     padding: 20px;
@@ -154,26 +150,24 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid container for History content */
 .history-content {
     display: grid;
-    grid-template-columns: 1fr 0.6fr 1fr; /* Adjusted proportions for text-image-text */
-    gap: 15px; /* Reducing gap for better balance */
+    grid-template-columns: 1fr 0.6fr 1fr;
+    gap: 15px;
     align-items: center;
 }
 
-/* Text block inside History */
 .history-content .left-text,
 .history-content .right-text {
     padding: 10px;
 }
 
 .history-content .left-text {
-    grid-column: 1; /* Left text in the first column */
+    grid-column: 1;
 }
 
 .history-content .right-text {
-    grid-column: 3; /* Right text in the third column */
+    grid-column: 3;
 }
 
 .history-content p {
@@ -181,10 +175,9 @@ header nav ul li a:hover {
     margin: 0 0 10px 0;
 }
 
-/* Image container inside History */
 .history-image {
     grid-column: 2;
-    width: 70%; /* Adjusted image size for balance */
+    width: 70%;
     text-align: center;
     margin: 0 auto;
 }
@@ -219,7 +212,6 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-/* Adventure Images Layout */
 .adventure-images {
     display: flex;
     flex-wrap: wrap;
@@ -241,7 +233,7 @@ header nav ul li a:hover {
     margin: 0 auto;
 }
 
-.image-container .caption {
+.image-container figcaption {
     font-size: 0.9em;
     color: var(--text-color);
     margin-top: 5px;
@@ -249,8 +241,8 @@ header nav ul li a:hover {
 
 /* Footer Styling */
 footer {
-    background-color: var(--primary-color); /* High contrast background */
-    color: white; /* High contrast text */
+    background-color: var(--primary-color);
+    color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -261,13 +253,12 @@ footer {
     text-align: center;
 }
 
-/* Social Media Icons */
 .footer-right {
     position: absolute;
-    right: 45px; 
-    bottom: -1250px; 
+    right: 45px;
+    bottom: -1225px;
     display: flex;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .social-media a {

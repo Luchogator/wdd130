@@ -248,13 +248,13 @@ header nav ul li a:hover {
 /* Image Container in Adventure Section - Margin and text alignment for each image */
 .image-container {
     text-align: center;
-    margin: 20px;
+    margin: 8px;
 }
 
 /* Image Styling in Adventure Section - Set size and border for the images */
 .image-container img {
-    width: auto;
-    height: 200px;
+    width: 255px;
+    height: auto; 
     border: var(--accent2-color) solid 2px;
     border-radius: 5px;
     object-fit: cover;

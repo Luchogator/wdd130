@@ -305,3 +305,91 @@ footer {
     width: 32px;
     height: 32px;
 }
+
+/* Contact Us Specific Styling */
+
+/* General Container Styling */
+.contact-us-intro, .contact-us-info, .contact-us-map, .contact-us-employees, .contact-us-form {
+    max-width: 800px; /* Asegurar que todo esté alineado al mismo ancho */
+    margin: 0 auto; /* Centramos todo */
+    padding: 20px;
+}
+
+/* Google Map Styling */
+.contact-us-map iframe {
+    width: 100%;
+    height: 400px; /* Cambiar el tamaño del mapa para que sea más visible */
+    border: none;
+    border-radius: 10px; /* Añadir bordes redondeados para mejor apariencia */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Us Form Styling */
+.contact-us-form {
+    padding: 30px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent2-color);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 600px; /* Ajuste para mantener el ancho consistente con otras secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Asegurar que los elementos se alineen correctamente */
+}
+
+.contact-us-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Form Inputs Styling */
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form textarea {
+    width: calc(100% - 20px); /* Mantener algo de margen para los campos */
+    padding: 10px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+.contact-us-form button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-us-form button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Styling for Employee Images */
+.contact-us-employees {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.contact-us-employees figure {
+    text-align: center;
+    max-width: 250px;
+}
+
+.contact-us-employees img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--accent2-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

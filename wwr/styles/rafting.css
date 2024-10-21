@@ -57,7 +57,7 @@ header nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adjust spacing between buttons */
+    gap: 20px;
 }
 
 /* Navigation Links - Styling for each navigation link with padding and hover effect */
@@ -69,18 +69,18 @@ header nav ul li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px 40px; /* Longer and slimmer buttons */
+    padding: 10px 40px; 
     background-color: var(--secondary-color);
     border-radius: 5px;
     transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for a 3D effect */
-    font-size: 1em; /* Smaller font size */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    font-size: 1em; 
 }
 
 /* Navigation Hover Effect - Background and shadow change when hovering over a link */
 header nav ul li a:hover {
     background-color: var(--accent1-color);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Hover effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
 }
 
 /* Logo Image Styling - Adjust size of the logo */
@@ -156,7 +156,7 @@ header nav ul li a:hover {
 /* History Section Styling - Layout and padding for the History section */
 .history-container {
     background-color: #f5f5f5;
-    padding: 30px; /* Increased padding for more space */
+    padding: 30px; 
     border: var(--accent2-color) solid 1px;
     border-radius: 10px;
     margin: 30px auto;
@@ -169,9 +169,9 @@ header nav ul li a:hover {
 .history-content {
     display: grid;
     grid-template-columns: 1fr 0.6fr 1fr;
-    gap: 25px; /* Increased gap for better balance */
+    gap: 25px; 
     align-items: center;
-    margin-bottom: 30px; /* Added space after the history section */
+    margin-bottom: 30px; 
 }
 
 /* History Text Styling - Padding for the text blocks */
@@ -235,7 +235,7 @@ header nav ul li a:hover {
 /* Paragraph in Adventure Section - Center text and add space below */
 .adventure-container p {
     text-align: center;
-    margin-bottom: 30px; /* Added space after the text */
+    margin-bottom: 30px; 
 }
 
 /* Adventure Images - Flexbox layout for the images */
@@ -243,12 +243,13 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 /* Image Container in Adventure Section - Margin and text alignment for each image */
 .image-container {
     text-align: center;
-    margin: 8px;
+    margin: -3px;
 }
 
 /* Image Styling in Adventure Section - Set size and border for the images */
@@ -310,17 +311,17 @@ footer {
 
 /* General Container Styling */
 .contact-us-intro, .contact-us-info, .contact-us-map, .contact-us-employees, .contact-us-form {
-    max-width: 800px; /* Asegurar que todo esté alineado al mismo ancho */
-    margin: 0 auto; /* Centramos todo */
+    max-width: 800px; 
+    margin: 0 auto; 
     padding: 20px;
 }
 
 /* Google Map Styling */
 .contact-us-map iframe {
     width: 100%;
-    height: 400px; /* Cambiar el tamaño del mapa para que sea más visible */
+    height: 400px; 
     border: none;
-    border-radius: 10px; /* Añadir bordes redondeados para mejor apariencia */
+    border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -331,11 +332,11 @@ footer {
     border: 1px solid var(--accent2-color);
     border-radius: 10px;
     margin: 30px auto;
-    max-width: 600px; /* Ajuste para mantener el ancho consistente con otras secciones */
+    max-width: 600px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Asegurar que los elementos se alineen correctamente */
+    align-items: stretch; 
 }
 
 .contact-us-form form {
@@ -347,7 +348,7 @@ footer {
 .contact-us-form input[type="text"],
 .contact-us-form input[type="email"],
 .contact-us-form textarea {
-    width: calc(100% - 20px); /* Mantener algo de margen para los campos */
+    width: calc(100% - 20px); 
     padding: 10px;
     border: 1px solid var(--accent2-color);
     border-radius: 5px;
@@ -393,3 +394,96 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Introduction Section */
+.contact-us-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-us-intro h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+}
+
+/* Contact Information Section */
+.contact-us-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-us-info li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Map Section */
+.contact-us-map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Employees Section */
+.contact-us-employees h2 {
+    text-align: center;
+}
+
+.contact-us-employees .employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-us-employees figure {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-us-employees img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-us-employees figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us-employees .employees {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us-employees figure {
+        width: 80%;
+    }
+}

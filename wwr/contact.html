@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags and title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rafting Adventures Contact Us Page">
+    <!-- Updated meta description -->
+    <meta name="description" content="Contact Rafting Adventures for reservations, questions, or more information. We're here to help you plan your next great adventure!">
     <meta name="author" content="Luis Eleazar Lizano Rojas">
+    <!-- Updated title -->
     <title>Rafting Adventures | Contact Us</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Include fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body>
+<body class="contact-page">
 
+    <!-- Header (same as About Us page, do not modify) -->
     <header>
         <div class="header-container">
             <div class="logo-container">
@@ -31,54 +36,70 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- Introduction Section -->
         <section class="contact-us-intro">
+            <!-- Centered title -->
             <h1>Rafting Adventures</h1>
             <p>We'd love to hear from you!</p>
             <p>If you have any questions, want to make a reservation, or need more information about our services, feel free to contact us using the form below. We're here to help you plan your next great adventure!</p>
         </section>
 
-        <section class="contact-us-info">
+        <!-- Contact Information (styled as a card) -->
+        <section class="contact-us-info card">
             <h2>Contact Information</h2>
-            <p><strong>Address:</strong> Fernando Belaunde Terry Highway, Km 432, Tarapoto, San Martin, Peru</p>
-            <p><strong>Phone:</strong> +51 963781410</p>
-            <p><strong>Email:</strong> info@raftingadventures.com</p>
+            <ul>
+                <li>📍 <strong>Address:</strong> Fernando Belaunde Terry Highway, Km 432, Tarapoto, San Martin, Peru</li>
+                <li>📞 <strong>Phone:</strong> +51 963781410</li>
+                <li>✉️ <strong>Email:</strong> info@raftingadventures.com</li>
+            </ul>
         </section>
 
-        <section class="contact-us-map">
+        <!-- Google Map Section (contained within a card) -->
+        <section class="contact-us-map card">
             <h2>Our Location</h2>
+            <!-- Embedded Google Map -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722.2333066277365!2d-76.30995755043705!3d-6.77404541374322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ba7b0371c9451f%3A0xd349e8a3d8f53482!2sCarr.%20Fernando%20Belaunde%20Terry%20432!5e1!3m2!1sen!2spe!4v1729391748249!5m2!1sen!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <section class="contact-us-employees">
+        <!-- Meet Our Team Section (styled as a card) -->
+        <section class="contact-us-employees card">
             <h2>Meet Our Team</h2>
-            <figure>
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <figcaption>John Doe - Adventure Specialist</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <figcaption>Jane Smith - Reservation Coordinator</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <figcaption>Richard Roe - Tour Guide</figcaption>
-            </figure>
+            <div class="employees">
+                <!-- Employee 1 -->
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe - Adventure Specialist">
+                    <figcaption>John Doe - Adventure Specialist</figcaption>
+                </figure>
+                <!-- Employee 2 -->
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith - Reservation Coordinator">
+                    <figcaption>Jane Smith - Reservation Coordinator</figcaption>
+                </figure>
+                <!-- Employee 3 -->
+                <figure>
+                    <img src="images/employee3.jpg" alt="Richard Roe - Tour Guide">
+                    <figcaption>Richard Roe - Tour Guide</figcaption>
+                </figure>
+            </div>
         </section>
 
-        <section class="contact-us-form">
+        <!-- Contact Form Section (styled as a card) -->
+        <section class="contact-us-form card">
             <h2>Contact Us</h2>
             <form action="#" method="post">
+                <!-- Full Name Field -->
                 <div class="form-item column2">
                     <label for="username">Full Name:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
-
+                <!-- Email Address Field -->
                 <div class="form-item column2">
                     <label for="useremail">Email Address:</label>
                     <input type="email" id="useremail" name="useremail" required>
                 </div>
-
+                <!-- Purpose of Message -->
                 <div class="form-item column1">
                     <label>Purpose of Message:</label>
                     <div>
@@ -94,26 +115,28 @@
                         <label for="suggestion">Website Suggestion</label>
                     </div>
                 </div>
-
+                <!-- Message Field -->
                 <div class="form-item column2">
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
-
+                <!-- Newsletter Checkbox -->
                 <div class="form-item">
                     <input type="checkbox" id="newsletter" name="newsletter">
                     <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                 </div>
-
+                <!-- Submit Button -->
                 <button type="submit">Contact Us Now</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer (same as About Us page, do not modify) -->
     <footer>
         <div class="footer-content">
             <p>© 2024 Rafting Adventures. Developed by Luis Eleazar Lizano Rojas</p>
             <p>Contact us: info@raftingadventures.com | +51 963781410</p>
+            <!-- Link to the wireframe -->
             <a href="wireframe_contact_us.png">Contact Us Page Wireframe</a>
         </div>
         <div class="footer-right social-media">

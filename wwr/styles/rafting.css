@@ -486,4 +486,19 @@ main {
     .contact-us-employees figure {
         width: 80%;
     }
+    
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:visited {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
 }
